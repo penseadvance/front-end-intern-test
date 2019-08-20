@@ -1,0 +1,12 @@
+/* font-family: 'Cookie', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 71px;
+    color: purple;
+}
