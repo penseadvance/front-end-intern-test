@@ -1,12 +1,74 @@
 /* font-family: 'Cookie', cursive; */
-@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/front-end-intern-test/assets/04-BG.png);
+}
+.container {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header {
+    background: #acd0b6;
+    height: 5em;
+    width: auto;
+}
+
+#logo {
+    position: relative;
+    align-content: center;
+}
+
+
+.item{
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
 
 h1 {
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    font-weight: 300;
+    color: #e4efcb;
+}
+
+#name, #email, #message {
+    width: 80%;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#name, #email {
+    height: 50px;
+}
+
+#send {
+    width: 85%;
+    height: 3em;
+    background: #71a397;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    box-shadow: #4a8978;
 }
