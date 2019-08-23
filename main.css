@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700&display=swap');
 html, body {
     box-sizing: border-box;
     padding: 0;
@@ -14,13 +12,14 @@ html, body {
     width: 100%;
     background-image: url(/front-end-intern-test/assets/04-BG.png);
 }
+
 .container {
+    position: relative;
     display: flex;
     height: auto;
     width: auto;
-    flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: space-around;
+    border-block-end: 100px;
 }
 
 header {
@@ -31,44 +30,67 @@ header {
 
 #logo {
     position: relative;
-    align-content: center;
+    display: block;
+    margin: auto;
+    top: 15px;
 }
 
-
-.item{
-    width: 500px;
-    height: auto;
+.item {
+    width: 480px;
+    height: 2em;;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
+    position: relative;
+    width: 100%;
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    font-weight: 300;
+    font-weight: lighter;
     color: #e4efcb;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    line-height: 50px;
+
 }
 
-#name, #email, #message {
+
+
+#name, #email {
     width: 80%;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+}
+
+#message {
+    width: 81.5%;
     border-radius: 5px;
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 18px;
-    padding: 10px;
-}
-
-#name, #email {
-    height: 50px;
+    padding: 5px;
+    border: none;
+    resize: none;
 }
 
 #send {
     width: 85%;
-    height: 3em;
+    height: 2em;
     background: #71a397;
     text-align: center;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 22px;
     color: white;
-    box-shadow: #4a8978;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 7px 0px 0px rgb(74, 137, 120);
+    border: none;
+    margin-bottom: 30px;
 }
