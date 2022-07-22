@@ -4,9 +4,74 @@
 /* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
-h1 {
+.cabecalho{
+    align-items: center;
+    background: #acd0b6;
+    height: 10vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.principal{
+    background: url(./assets/04-BG.png) center / cover no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+.principal__titulo {
+    color: #acd0b6;
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    font-weight: normal;
+    line-height: 3rem;
+    margin: 4rem 0 2rem 0;
+    max-width: 500px;
+    text-align: center;
+    width: 100vw;
 }
+
+.principal__form{
+    height: 100vh;
+    max-height: 50%;
+    max-width: 400px;
+    width: 100vw;
+}
+
+.principal__form___input{
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: light;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.principal__form___button{
+    background: #71a397;
+    border: none;
+    border-bottom: 6px solid #528d7d;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding: .5rem;
+    text-transform: uppercase;
+    width: 105%;
+}
+
+.campoInvalido{
+    border: 3px solid red;
+}
+
+
+

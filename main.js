@@ -15,18 +15,25 @@
   contactForm.addEventListener('submit', function() {
     // A propriedade "value" contém o valor atual de um input ou textarea
     const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
 
     // A propriedade "length" contém o tamanho (em caracteres) de uma
     // uma string. Toda string contém essa propriedade.
     const nameLength = nameValue.length;
+    const emailLength = emailInput.length;
+    const messageLenght = messageInput.length;
 
-    // "window" é um objeto global que representa a janela (ou aba) do
-    // navegador que está executando o código do seu site. O método
-    // "alert" simplesmente mostra um aviso para o usuário contendo a
-    // mensagem provida.
-    window.alert(`Botão enviar clicado! Conteúdo do campo nome: ${nameValue} (${nameLength} caracteres)`);
+    /*Usando o classList com a function add, inserimos uma classe que 
+    visualmente alerta os campos obrigatórios e com um if deixamos claro
+    essa condição.*/
+    if(nameLength === 0 || emailLength === 0 || messageLenght === 0){
+      nameInput.classList.add('campoInvalido');
+      emailInput.classList.add('campoInvalido');
+      messageInput.classList.add('campoInvalido');
 
-    // Altere e complete essa função para validar os campos do formulário
-    // de acordo com as especificações do teste. Boa sorte!
+      window.alert('Verifique os campos em vermelho, seus preenchimentos são obrigatórios.')
+    }else{
+      window.alert(`Obrigado ${nameValue}! Retornaremos no email ${emailValue} assim que possível, fique de olho em suas menssagens.`);
+    }
   });
 })();
